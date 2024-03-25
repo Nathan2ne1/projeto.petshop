@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Pet Shop</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/menu.css" rel="stylesheet" type="text/css">
+  <link href="css/form.css" rel="stylesheet" type="text/css">
+  <link href="css/footer.css" rel="stylesheet" type="text/css">
+  <link href="css/cadastro.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="./images/image.png" type="image/x-icon">
+
+
+</head>
+
+<body>
+  <div id="header">
+    <div class="navbar desktop-menu">
+      <div class="logo">
+        <a href="index.html"><img src="images/image.png" alt="my-logo" /></a>
+      </div>
+      <div id="menuSection" class="menu-sec">
+        <ul class="nav-menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="cadastro.html" class="active">Cadastro</a></li>
+        </ul>
+      </div>
+      <div class="social-icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </div>
+  </div>
+  <div class="geral">
+    <main>
+      <div class="wrapper">
+        <div class="pet-image image-cadastro">
+          <img src="images/pets-cadastro.png">
+        </div>
+        <div class="cadastro-content">
+          <h1>Cadastro de Pets</h1>
+
+          <div class="bg-form">
+            <form action="#">
+              <div>
+                <label>Nº do Registro:</label>
+                <input type="text" id="registroPet" placeholder="Ex: 01" />
+              </div>
+              <div>
+                <label>Nome:</label>
+                <input type="text" id="nomePet" placeholder="Insira o nome" />
+              </div>
+              <div>
+                <label>Tipo:</label>
+                <input type="text" id="tipoPet" placeholder="Ex: cão, gato, peixe, ..." />
+              </div>
+              <div>
+                <label>Idade:</label>
+                <input type="text" id="idadePet" placeholder="Ex: 1 ano" />
+              </div>
+              <div id="btn-envio">
+                <input type="button" value="Cadastrar" class=""
+                  onclick="preenchimentoCampos('registroPet', 'nomePet', 'tipoPet', 'idadePet')">
+                <input type="reset" id="cancelar" class="" value="Cancelar" />
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <div class="row">
+      <div class="col">
+        <img src="./images/image.png" class="footer_logo">
+        <p class="footer_about">Seja bem-vindo ao nosso Pet Shop! Aqui, no coração da cidade, cuidamos
+          de todos os seus animais de estimação com amor e dedicação. Com uma equipe dedicada de especialistas em
+          cuidados animais, oferecemos uma ampla gama de serviços, desde banho e tosa até cuidados veterinários
+          especializados.
+        </p>
+      </div>
+      <div class="col">
+        <h3>Endereço <div class="bottom_line"><span></span></div>
+        </h3>
+        <p>Rua dos Animais Felizes, 123</p>
+        <p>Bairro dos Pets</p>
+        <p>Cidade dos Bichinhos</p>
+        <p class="footer_email">xxxx@gmail.com.br</p>
+        <h4>(55) 1234-4568</h4>
+      </div>
+      <div class="col">
+        <h3>Links <div class="bottom_line"><span></span></div>
+        </h3>
+        <ul>
+          <li><a class="active" href="index.html">Inicio</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="#">Cadastro</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <hr>
+    <p class="copyright">Nathan Santos de Oliveira Ⓒ 2024 - Todos os Direitos Reservados</p>
+  </footer>
+
+  <script>
+    document.querySelector('.enviar').addEventListener('click', function () {
+      alert('Enviado!');
+    });
+
+  </script>
+</body>
+
+</html>

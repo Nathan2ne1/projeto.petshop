@@ -1,0 +1,83 @@
+body#contato {
+    background-color: #f8f8f8;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+
+}
+
+form:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+
+}
+
+.formulario {
+    padding-top: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea[name="mensagem"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+textarea[name="mensagem"]:focus {
+    border-color: #555;
+}
+
+input[type="submit"] {
+    background-color: hsl(203, 65%, 50%);
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(56, 92, 120);
+}
+
+.redes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.container {
+    display: flex;
+    flex: content
+}

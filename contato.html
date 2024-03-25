@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Pet Shop</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/menu.css" rel="stylesheet" type="text/css">
+  <link href="css/form.css" rel="stylesheet" type="text/css">
+  <link href="css/footer.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="./images/image.png" type="image/x-icon">
+
+
+</head>
+
+<body>
+  <div id="header">
+    <div class="navbar desktop-menu">
+      <div class="logo">
+        <a href="index.html"><img src="images/image.png" alt="my-logo" /></a>
+      </div>
+      <div id="menuSection" class="menu-sec">
+        <ul class="nav-menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a class="active" href="contato.html">Contato</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </div>
+      <div class="social-icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+
+      </div>
+    </div>
+  </div>
+  <div id="body">
+    <div. class="formulario">
+
+      <h2>Entre em contato conosco! 🐕</h2>
+      <br><br>
+      <form method="get" id="form-contato" onsubmit="exibirMensagem()">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="numero">Telefone/WhatsApp:</label>
+        <input type="text" id="numero" name="numero" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea>
+
+        <input type="submit" value="Enviar" class="enviar">
+      </form>
+
+  </div>
+  </div>
+
+  <footer>
+    <div class="row">
+      <div class="col">
+        <img src="./images/image.png" class="footer_logo">
+        <p class="footer_about">Seja bem-vindo ao nosso Pet Shop! Aqui, no coração da cidade, cuidamos
+          de todos os seus animais de estimação com amor e dedicação. Com uma equipe dedicada de especialistas em
+          cuidados animais, oferecemos uma ampla gama de serviços, desde banho e tosa até cuidados veterinários
+          especializados.
+        </p>
+      </div>
+      <div class="col">
+        <h3>Endereço <div class="bottom_line"><span></span></div>
+        </h3>
+        <p>Rua dos Animais Felizes, 123</p>
+        <p>Bairro dos Pets</p>
+        <p>Cidade dos Bichinhos</p>
+        <p class="footer_email">xxxx@gmail.com.br</p>
+        <h4>(55) 1234-4568</h4>
+      </div>
+      <div class="col">
+        <h3>Links <div class="bottom_line"><span></span></div>
+        </h3>
+        <ul>
+          <li><a class="active" href="index.html">Inicio</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="#">Cadastro</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <hr>
+    <p class="copyright">Nathan Santos de Oliveira Ⓒ 2024 - Todos os Direitos Reservados</p>
+  </footer>
+
+  <script>
+    document.querySelector('.enviar').addEventListener('click', function () {
+      alert('Enviado!');
+    });
+
+  </script>
+
+</body>
+
+</html>
